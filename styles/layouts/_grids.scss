@@ -62,7 +62,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
     padding: 0 $md-margin;
 
     @for $i from 1 through $md-columns {
-      .col-sm-#{$i} {
+      .col-md-#{$i} {
         width: percentage($i / $md-columns);
       }
     }
