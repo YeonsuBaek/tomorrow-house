@@ -73,7 +73,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
     padding: 0;
 
     @for $i from 1 through $lg-columns {
-      .col-sm-#{$i} {
+      .col-lg-#{$i} {
         width: ($lg-unit + $gutter) * $i;
       }
     }
