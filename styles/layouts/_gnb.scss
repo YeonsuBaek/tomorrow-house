@@ -12,8 +12,54 @@
       @include flexbox(end);
     }
 
-    .gnb-icon-button.is-search {
+    .gnb-search-button {
       margin-right: 4px;
+    }
+  }
+
+  &-icon-button {
+    @include flexbox;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    color: $secondary;
+  }
+
+  .gnb-auth {
+    margin-left: 8px;
+
+    a {
+      @include text-style(14, $secondary);
+      font-weight: 700;
+
+      &:first-child {
+        margin-right: 12px;
+      }
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  &-menu-button {
+    color: $blue;
+  }
+
+  .gnb-auth {
+    margin-left: 8px;
+
+    a {
+      @include text-style(14, $secondary);
+      font-weight: 700;
+
+      &:first-child {
+        margin-right: 12px;
+      }
+
+      &:hover {
+        color: $blue;
+      }
     }
   }
 
@@ -27,55 +73,6 @@
       display: block;
       width: auto;
       height: 20px;
-    }
-  }
-
-  @include responsive(T) {
-    &-left {
-      @include flexbox(start);
-    }
-
-    &-right {
-      @include flexbox(end);
-
-      .button-group {
-        margin-right: 24px;
-
-        .gnb-icon-button {
-          margin-right: 8px;
-        }
-      }
-    }
-
-    &-wrapper {
-      height: 80px;
-    }
-
-    .logo {
-      position: static;
-      margin-right: 32px;
-      transform: none;
-
-      img {
-        height: 24px;
-      }
-    }
-
-    .btn-primary {
-      width: 88px;
-
-      i {
-        margin-left: 4px;
-      }
-    }
-  }
-
-  @include responsive(D) {
-    &-right {
-      .input-group {
-        width: 264px;
-        margin-right: 24px;
-      }
     }
   }
 }
