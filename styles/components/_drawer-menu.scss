@@ -1,9 +1,9 @@
 .drawer-menu {
   $draw-menu-item-height: 36px;
-  $draw-menu-list-padding: 8px;
-  $community-length: 8;
+  $draw-menu-list-padding: 20px;
+  $community-length: 9;
   $store-length: 9;
-  $export-length: 2;
+  $export-length: 3;
 
   @function _calculate-max-content-height($length) {
     @return $draw-menu-item-height * $length + $draw-menu-list-padding;
