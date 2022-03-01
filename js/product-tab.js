@@ -108,5 +108,5 @@ function updateActiveTabOnscroll() {
 }
 
 window.addEventListener('load', detectTabPanelPosition)
-window.addEventListener('resize', detectTabPanelPosition)
-window.addEventListener('scroll', updateActiveTabOnscroll)
+window.addEventListener('resize', _.throttle(detectTabPanelPosition, 1000))
+window.addEventListener('scroll', _.throttle(updateActiveTabOnscroll, 300))
